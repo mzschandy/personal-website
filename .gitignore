@@ -3,3 +3,6 @@ bower_components
 node_modules
 npm-debug.log
 css
+yarn
+.pnp.js
+.yarn

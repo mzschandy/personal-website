@@ -1,0 +1,25 @@
+#navigation { padding: 1em 0;}
+#navigation .navMenu {
+    justify-content: flex-end;
+}
+.zachHead {
+    background-image: url('/assets/static/zachhead.io.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute  ;
+}
+.about {
+    
+    position: relative;
+    z-index: 1;
+    width: 424px;
+    margin-top: 5em;
+    margin-left: 12em;
+
+    .title {
+        font-size: 80px;
+    }
+}
