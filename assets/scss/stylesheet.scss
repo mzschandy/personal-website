@@ -9,10 +9,11 @@
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    position: absolute  ;
+    position: absolute;
 }
+
 .about {
-    
+
     position: relative;
     z-index: 1;
     width: 424px;
@@ -34,9 +35,11 @@ footer {
         border-top: 3px solid $white;
         padding: 1em 0;
     }
+
     .name {
         font-weight: 800;
     }
+
     .socialMenu {
         justify-content: flex-end;
     }
@@ -46,9 +49,10 @@ footer {
 /* - Global - */
 
 #interior .pageTitle {
-    font-size: 24px; 
+    font-size: 24px;
     font-weight: 800;
 }
+
 //#interior .header {margin-bottom: 1em;}
 .header hr {
     width: 91px;
@@ -58,16 +62,19 @@ footer {
 }
 
 .projectDetail {
-    .header {
+    &>.header {
         position: relative;
         display: flex;
         justify-content: center;
+
     }
+
     .pageTitle {
         //display: flex;
         text-align: center;
-        position: relative;
-        top: 0;
+        position: absolute;
+        top: 60px;
+        margin: auto 0;
     }
 }
 
@@ -76,7 +83,35 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+}
+
+.imagesLister {
+
+    .image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin: 1em 0;
+
+        &:last-child {
+            margin-bottom: 5em;
+        }
+    }
+
+}
+
+.contactForm {
+    label {
+        color: $white;
+        font-weight: 650;
+    }
+    button {
+        background-color: $blue;
+        margin: 0 auto;
+    }
 }
 
 @import "_components";
-

@@ -69,6 +69,11 @@
         &:nth-child(3n+3) {
             background-color: $green;
         }
+
+        &:hover {
+            transform: translateY(-1em);
+            transition: transform .3s;
+        }
     }
 }
 
