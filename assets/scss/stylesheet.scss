@@ -1,7 +1,7 @@
-#navigation { padding: 1em 0;}
-#navigation .navMenu {
-    justify-content: flex-end;
-}
+@import '_settings';
+
+@import "_navigation";
+
 .zachHead {
     background-image: url('/assets/static/zachhead.io.png');
     height: 100%;
@@ -23,3 +23,60 @@
         font-size: 80px;
     }
 }
+
+footer {
+    //position: relative;
+    width: 100%;
+    bottom: 0;
+
+
+    .footerContent {
+        border-top: 3px solid $white;
+        padding: 1em 0;
+    }
+    .name {
+        font-weight: 800;
+    }
+    .socialMenu {
+        justify-content: flex-end;
+    }
+}
+
+/* --- Interior Styles --- */
+/* - Global - */
+
+#interior .pageTitle {
+    font-size: 24px; 
+    font-weight: 800;
+}
+//#interior .header {margin-bottom: 1em;}
+.header hr {
+    width: 91px;
+    border-bottom: 5px solid $white;
+    margin-left: 0;
+    margin-top: -.1em;
+}
+
+.projectDetail {
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .pageTitle {
+        //display: flex;
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+}
+
+.headerBanner {
+    height: 221px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@import "_components";
+
