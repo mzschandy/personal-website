@@ -117,3 +117,48 @@
         background-repeat: no-repeat;
     }
 }
+/* Medium Desktop ---------------------------------------------------*/
+@media screen and (min-width: 1140px) and (max-width: 1299px) {}
+/* Small Desktop ---------------------------------------------------*/
+@media screen and (min-width: 1025px) and (max-width: 1139px) {}
+//Tablet
+@media screen and (min-width: 750px) and (max-width:1024px) {
+    .featuredProject {
+        .details {margin: 2em;}
+
+        .tags .tag {
+            margin: 0 .5em .5em .5em;
+        }
+    }
+
+    .projects {
+        justify-content: space-around;
+
+        .project {
+            width: 370px;
+        }
+    }
+}
+//Phone
+@media screen and (max-width: 749px) {
+    .tagsList {
+        .tag {
+            margin: 0 1em .5em 1em;
+        }
+    }
+    .featuredProject {
+        .details {margin: 1em;}
+
+        .tags .tag {
+            margin: 0 .5em .5em .5em;
+        }
+    }
+
+    .projects {
+        justify-content: center;
+
+        .project {
+            width: 370px;
+        }
+    }
+}
