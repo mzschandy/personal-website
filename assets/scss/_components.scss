@@ -122,6 +122,10 @@
         background-repeat: no-repeat;
     }
 }
+/* Beyond Large ---------------------------------------------------*/
+@media screen and (min-width: 1441px) {}
+/* Large Desktop ---------------------------------------------------*/
+@media screen and (min-width: 1300px) and (max-width: 1440px) {}
 /* Medium Desktop ---------------------------------------------------*/
 @media screen and (min-width: 1140px) and (max-width: 1299px) {}
 /* Small Desktop ---------------------------------------------------*/
