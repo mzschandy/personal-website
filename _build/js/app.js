@@ -13,3 +13,12 @@ function scrollFunction() {
         $("#navigation").removeClass("scroll")
     }
 }
+
+$(document).ready(function() {
+    $(".menuBtn").click(function() {
+      $("#mobileNav").show()
+    })
+    $(".closeBtn").click(function() {
+      $("#mobileNav").hide()
+    })
+  })
