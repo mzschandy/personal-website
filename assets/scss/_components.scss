@@ -13,7 +13,22 @@
 }
 
 /*Basic Component */
-.basicContent {}
+.basicContent {
+    .medium-6 > div {
+        padding-right: 1em;
+    }
+    img {
+        width: 400px;
+    }
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .text {
+        padding-top: 1em;
+    }
+}
 
 /* Tags Component */
 .tagsList {
@@ -207,7 +222,7 @@
         justify-content: center;
 
         .project {
-            width: 370px;
+            width: auto;
         }
     }
 }
