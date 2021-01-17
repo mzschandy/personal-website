@@ -52,13 +52,22 @@
 
 /*Recent Projects Lister*/
 .projects {
-    justify-content: space-between;
+    //justify-content: space-between;
+    --gap: 75px;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+    display: inline-flex;
 
     .project {
         height: 300px;
         width: 340px;
         //@at-root: 1px solid $white;
-        margin: 1em 0;
+        //margin: 1em 0;
+        margin: var(--gap) 1em 0 var(--gap);
+        
+        //flex-basis: calc(33% - 20px);
+        
 
         hr {
             width: 101px;
@@ -196,10 +205,10 @@
     }
 
     .projects {
-        justify-content: space-around;
-
+        justify-content: space-between;
+        //--gap: 50px;
         .project {
-            width: 370px;
+            width: 340px;
         }
     }
 }
@@ -222,7 +231,7 @@
         justify-content: center;
 
         .project {
-            width: auto;
+            flex: 100%;
         }
     }
 }
