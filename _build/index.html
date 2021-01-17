@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js">
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
     <script src="js/app.js"></script>
@@ -47,17 +48,37 @@
       </nav>
     </section>
     <main>
-      <div class="zachHead">
-        <div class="about">
-          <div class="h4 name">Hi, my name is Zach. I am a</div>
-          <div class="h1 title">Front End Developer & Designer</div>
-          <div class="blurb">I design and build cool things for the web. </div>
-          <button class="button hollow">Get in Touch</button>
+      <div class="hero grid-container">
+        <div class="grid-x">
+          <div class="about">
+            <div class="h6 intro">Hi, my name is</div>
+            <div class="h1 name">Zach S-Lartey,</div>
+            <div class="h4 title">Front End Developer & Designer.</div>
+            <div class="blurb"><h1 id="typewriter" style=""></h1></div>
+            <button class="contact button hollow">Get in Touch</button>
+          </div>
         </div>
       </div>
-      
     </main>
-      
+    
+    <script>
+      new TypeIt("#typewriter", {
+    loop: true,
+    loopDelay: 2000,
+  }).type("I build cool websites")
+  .pause(2000)
+  .delete(22, {
+    delay: 1500
+  })
+  .type("I design modern interfaces", {
+    delay: 750
+  })
+  .pause(2000)
+  .delete(26, {
+    delay: 1500
+  })
+  .type("I design and build cool things for the web.").go();
+    </script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   </body>
 </html>

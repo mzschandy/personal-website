@@ -14,21 +14,31 @@
     position: absolute;
 }
 
-.about {
+.hero {
+    margin-top: 115px;
 
-    position: absolute;
-    z-index: 1;
-    width: 424px;
-    top: 20%;
-    left: 10%;
+    .about {
+        z-index: 1;
+        padding-top: 2em;
+    }
+
+    .name {
+        font-size: 80px;
+        font-weight: 800;
+    }
 
     .title {
-        font-size: 80px;
+        font-size: 60px;
+        font-weight: 650;
     }
-    .blurb, button {
-        display: none;
+
+    .contact {
+        margin-top: 1em;
+        font-size: 1.5em;
     }
+    
 }
+
 
 footer {
     //position: relative;
@@ -52,62 +62,39 @@ footer {
 
 /* Beyond Large ---------------------------------------------------*/
 @media screen and (min-width: 1441px) {
-    .zachHead {
-        background-size: contain;
-        .about {
-            top: 20%;
-            left: 12%;
-        }
-    }
 }
 /* Large Desktop ---------------------------------------------------*/
 @media screen and (min-width: 1300px) and (max-width: 1440px) {
-    .zachHead .about {
-        top: 20%;
-        left: 10%;
-    }
 }
 /* Medium Desktop ---------------------------------------------------*/
 @media screen and (min-width: 1140px) and (max-width: 1299px) {
-    .zachHead .about {
-        top: 20%;
-        left: 7%;
-        .title {font-size: 65px;}
-    }
 }
 /* Small Desktop ---------------------------------------------------*/
 @media screen and (min-width: 1025px) and (max-width: 1139px) {
-    .zachHead .about {
-        top: 20%;
-        left: 5%;
-        .name{font-size: 20px;}
-        .title {font-size: 55px;}
-    }
 }
 //Tablet
 @media screen and (min-width: 750px) and (max-width:1024px) {
-    .zachHead .about {
-        top: 30%;
-        left: 5%;
-        width: 200px;
-        .name{font-size: 16px;}
-        .title {font-size: 44px;}
+    .hero {
+        margin-top: 30%;
     }
 }
 //Phone
 @media screen and (max-width: 749px) {
-    .zachHead {
-        background-image: none;
-        .about {
-            //top: 30%;
-            width: 100%;
-            margin: 10% 0;
-            left: 0;
-            padding: 20px;
-            .name{font-size: 16px;}
-            .title{font-size: 40px;}
-            .blurb{display: block;font-size: 16;}
-            button {display: block; margin: 1em 0;}
+    .hero {
+        margin-top: 45%;
+        .name {
+            font-size: 2.5em;
+            //margin-bottom: .5em;
+        }
+        .title {
+            font-size: 2em;
+            margin-bottom: .5em;
+        }
+        .blurb {
+            margin-bottom: .5em;
+        }
+        .contact {
+            font-size: 1.2em;
         }
     }
 }
