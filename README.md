@@ -1,2 +1,2 @@
 # personal-website
-Personal Website version 2 being built with Foundation!
+Second round of my personal website, built with HTML, Sass, and Foundation 6
